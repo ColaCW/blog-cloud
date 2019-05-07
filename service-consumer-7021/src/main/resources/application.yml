@@ -1,0 +1,12 @@
+server:
+  port: 7021   #端口号
+spring:
+  application:
+    name: service-consumer-7021  #服务名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/   #服务中心地址（单个，多个以逗号分隔）
+feign:
+  hystrix:
+    enabled: true
