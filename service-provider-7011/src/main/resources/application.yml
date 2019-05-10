@@ -1,9 +1,9 @@
 server:
-  port: 7011   #¶Ë¿ÚºÅ
+  port: 7011   #ç«¯å£å·
 spring:
   application:
-    name: service-provider-7011  #·şÎñÃû³Æ
+    name: service-provider-7011  #æœåŠ¡åç§°
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka/   #·şÎñÖĞĞÄµØÖ·£¨µ¥¸ö£¬¶à¸öÒÔ¶ººÅ·Ö¸ô£©
+      defaultZone: http://eureka7001.com:7001/eureka/   #æœåŠ¡ä¸­å¿ƒåœ°å€ï¼ˆå•ä¸ªï¼Œå¤šä¸ªä»¥é€—å·åˆ†éš”ï¼‰

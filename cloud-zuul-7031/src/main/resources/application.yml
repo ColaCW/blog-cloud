@@ -5,9 +5,18 @@ spring:
   application:
     name: cloud-zuul-7031
 zuul:
-  routes:
-    testlgq:     # 路由的 id
-      path: /test/**  #映射路径
-      url: http://www.lgqoxb.top/blogfront/blog.html#/   #映射路径对应的实际的url地址
-      #  访问路径规则 添加 映射路径的规则
-#      serviceId: user-service  # 指定服务端的名称
+#  routes:
+#    hello-service:     # 路由的 id
+#      path: /hello-service/**  #映射路径
+##      url: http://127.0.0.1:7011/hello   #映射路径对应的实际的url地址
+#      service-id: service-provider-7011
+  retryable: true
+
+ribbon:
+  MaxAutoRetries: 3
+  MaxAutoRetriesNextServer: 0
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/  #注册中心的地址
+
